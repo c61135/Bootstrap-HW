@@ -1,0 +1,117 @@
+//背景圖置中
+.img_center{    
+    
+    background-position: center center;
+    background-size: cover;
+}
+
+//文字垂直
+.textVertical{
+    text-decoration: none;
+    writing-mode: vertical-rl;
+}
+
+.textVertical-lg{
+    writing-mode: vertical-rl;
+}
+
+@media (max-width: 768px){
+    .textVertical-lg{
+        writing-mode: horizontal-tb;
+    }
+}
+
+//符號定位
+.markL{
+    position: absolute;
+}
+
+.markR{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.textSpacing{
+    letter-spacing: 8px;
+}
+
+
+//聯絡
+.contact_logo{
+    width: 40px;
+}
+
+//表尾
+
+.footer_logo{
+    width: 170px;
+}
+
+.footer_slogan{
+    width: 60px;
+}
+
+.footer_social{
+    width: 32px;
+}
+
+//裝飾線
+.text_decoration{
+    position: relative;
+}
+
+.text_decoration:before{
+    content: "";
+    background: $dark;    
+    width: 25px;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    left: 12%;    
+}
+
+.text_decoration:after{
+    content: "";
+    background: $dark;    
+    width: 25px;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    left: 80%;    
+}
+
+@media (max-width: 1200px){
+    .text_decoration:before{
+        left: 17%;    
+    }
+    
+    .text_decoration:after{
+        left: 75%;    
+    }
+}
+
+@media (max-width: 992px){
+    .text_decoration:before{
+        left: 3%;    
+    }
+    
+    .text_decoration:after{
+        left: 85%;    
+    }
+}
+
+//form
+.formMiddle{
+    text-align: center;
+    vertical-align: middle;
+}
+
+/*webkit瀏覽器專用*/
+.holder_dark ::-webkit-input-placeholder { color: $dark; }
+/*Firefox 4-18瀏覽器專用*/
+.holder_dark input::-moz-placeholder { color: $dark; }
+/*Firefox 19+瀏覽器專用*/
+.holder_dark input::-moz-placeholder{color: $dark;}
+/*IE10瀏覽器專用*/
+.holder_dark:-ms-input-placeholder{color: $dark;}
